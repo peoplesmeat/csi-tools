@@ -2,8 +2,8 @@ import json
 from fastapi import APIRouter
 from sqlalchemy import func, select, case, text
 from sqlalchemy.orm import Session
-from ..database import get_engine
-from ..models import ISCSite, ISCEnterpriseNetwork
+from backend.database import get_engine
+from backend.models import ISCSite, ISCEnterpriseNetwork
 
 router = APIRouter(prefix="/api/sites", tags=["sites"])
 

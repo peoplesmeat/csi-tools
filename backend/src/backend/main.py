@@ -1,8 +1,8 @@
 import os
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from . import database
-from .routers import sites
+from backend import database
+from backend.routers import sites
 
 app = FastAPI(title="CSI Tools API")
 
