@@ -47,7 +47,7 @@ export default function Dashboard({ sites, loading }: Props) {
       const matchesSearch =
         !q ||
         s.site?.toLowerCase().includes(q) ||
-        s.company?.toLowerCase().includes(q) ||
+        s.snowSiteName?.toLowerCase().includes(q) ||
         s.region?.toLowerCase().includes(q)
       const matchesType = !typeFilter || s.siteType === typeFilter
       return matchesSearch && matchesType
@@ -95,7 +95,7 @@ export default function Dashboard({ sites, loading }: Props) {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="filter sites, companies, regions…"
+                placeholder="filter sites, regions…"
                 style={{
                   paddingLeft: '24px',
                   paddingRight: '12px',
