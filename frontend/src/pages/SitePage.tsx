@@ -227,7 +227,7 @@ export default function SitePage() {
       <div style={{ display: 'grid', gridTemplateColumns: '340px 1fr', flex: 1, minHeight: 0 }}>
 
         {/* left: site info + security */}
-        <div style={{ borderRight: '1px solid #1c2028', padding: '24px 28px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
+        <div style={{ borderRight: '1px solid #1c2028', padding: '24px 28px', display: 'flex', flexDirection: 'column', gap: '32px', overflowY: 'auto' }}>
 
           <Collapsible label="Site Info">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
